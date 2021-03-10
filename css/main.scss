@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import '../css/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+// Start Navbar
+.navbar {
+    padding: 14px 0px;
+    background-color: #0F0F0E !important;
+
+    ul {
+        li {
+            padding-left: 8px;
+
+            a {
+                color: #ffffff !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 14px;
+                transition: 0.2s ease-in !important;
+
+                &:hover {
+                    color: $colorType1 !important;
+                }
+            }
+        }
+    }
+}
+
+.heading {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/amd.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+
+    .bg-overlay {
+        background: linear-gradient(rgba(0, 0, 0, 0.7));
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .header-content {
+        h1 {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -20px;
+
+            span {
+                color: $colorType1;
+            }
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ffffff;
+
+            span {
+                color: $colorType1;
+            }
+        }
+    }
+
+    .header-btns {
+        .btn01 {
+            border-radius: 20px 0px 0px 0px;
+            color: whitesmoke;
+            border: 2px solid whitesmoke !important;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover {
+                background: $colorType2;
+            }
+        }
+
+        .btn02 {
+            border-radius: 0px 0px 20px 0px;
+            color: whitesmoke;
+            border: 2px solid whitesmoke !important;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover {
+                background: $colorType1;
+            }
+        }
+    }
+
+    .header-socials2 {
+        a {
+            text-decoration: none;
+            color: #ffffff;
+
+
+            i {
+                height: 40px;
+                width: 40px;
+                border: 1px solid whitesmoke;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                border-radius: 50%;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    background-color: $colorType2;
+                }
+            }
+        }
+    }
+
+}
+
+
+// Start Services Section
+#services-section {
+    width: 100%;
+    height: auto;
+
+    .single-box {
+        padding: 40px 0px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out;
+
+        p {
+            width: 80%;
+            margin: auto;
+        }
+
+        i {
+            color: $colorType1;
+        }
+
+        h4 {
+            color: $colorType2;
+        }
+
+        &:hover {
+            background: $colorType3;
+            color: #ffffff;
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.sec-heading {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .heading-underline {
+        height: 3px;
+        width: 5%;
+        background: $colorType1;
+        margin: auto;
+    }
+
+    p {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+#team-section {
+    width: 100%;
+    height: auto;
+
+    .single-team {
+        img {
+            border-radius: 50%;
+            border: 3px solid $colorType2;
+            padding: 5px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $colorType2;
+        }
+
+        .team-social {
+            i {
+                font-size: 18px;
+                margin-top: 10px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $colorType1 !important;
+                }
+            }
+        }
+    }
+}
+
+#clients-section {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/reviews.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .sec-heading {
+        h2 {
+            color: whitesmoke;
+        }
+
+        .heading-underline {
+            background: whitesmoke;
+        }
+    }
+
+    .single-client {
+        color: whitesmoke;
+
+        img {
+            border-radius: 55%;
+            padding: 5px;
+            border: 3px solid whitesmoke;
+        }
+
+        h3 {
+            color: whitesmoke;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        span {
+            text-transform: capitalize;
+        }
+    }
+}
+
+#faq-section {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px !important;
+
+    .card-header {
+        background: #34495B;
+        padding: 15px;
+
+        h5 {
+            a {
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+#carrier-section {
+    width: 100%;
+    height: 50vh;
+    background: url('../images/cover-bg-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .bg-overlay2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5));
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .single-carrier {
+        i {
+            color: whitesmoke;
+        }
+
+        h1 {
+            color: $colorType2;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        p {
+            color: whitesmoke;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+    }
+}
+
+#contact-section {
+    height: 100vh;
+    width: 100%;
+
+    form {
+        padding: 0px 100px;
+
+        button {
+            border-radius: 20px 0px 20px 0px;
+            padding: 15px 25px;
+            color: whitesmoke;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            transition: all 0, 3s ease;
+            border: none;
+
+            &:hover {
+                background: $colorType2;
+                box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.53);
+
+            }
+        }
+    }
+}
+
+.footer-socials {
+    i {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* Responsive */
+@media screen and (min-width: 992px) {
+    #header-area{
+        height: auto;
+    }
+    .bg-overlay{
+        padding: 110px 0px;
+    }
+    #clients-section{
+        height: auto;
+        padding-bottom: 115px;
+    }
+    #faq-section{
+        height: auto;
+    }
+    #contact-section{
+        height: auto;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .sec-heading {
+        h2 {
+            font-size: 40px;
+        }
+
+        .heading-underline {
+            width: 10%;
+        }
+
+        p {
+            width: 80% !important;
+            font-size: 24px;
+        }
+    }
+
+    .single-box {
+        p {
+            width: 80%;
+            margin: auto;
+            font-size: 24px;
+        }
+
+        i {
+            font-size: 50px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+    }
+
+    #team-section {
+        width: 100%;
+        height: auto;
+
+        .single-team {
+            img {
+                width: 60%;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+
+            .team-social {
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    #clients-section {
+        height: auto;
+        padding-bottom: 40px;
+        width: 100%;
+
+
+        .sec-heading {
+            h2 {
+                color: whitesmoke;
+            }
+
+            .heading-underline {
+                background: whitesmoke;
+            }
+        }
+
+        .single-client {
+            margin-right: 50%;
+
+            img {
+                width: 80% !important;
+            }
+        }
+    }
+
+    #faq-section {
+        height: auto;
+        width: 100%;
+        margin-bottom: 100px !important;
+
+        img {
+            display: none !important;
+        }
+
+        .card-header {
+            background: #34495B;
+            padding: 15px;
+
+            h5 {
+                a {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    #carrier-section {
+        height: auto;
+
+        .bg-overlay2 {
+            height: auto;
+            padding: 30px 0px;
+
+        }
+
+        .single-carrier {
+            padding: 20px;
+        }
+    }
+
+    #contact-section {
+        height: auto;
+        padding-bottom: 50px;
+        width: 100%;
+
+        form {
+            padding: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .heading {
+        height: 80vh;
+    }
+
+    .sec-heading {
+        text-align: center;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .heading-underline {
+            width: 10%;
+        }
+
+        p {
+            width: 80% !important;
+            font-size: 24px;
+        }
+    }
+
+    .single-box {
+        p {
+            width: 80%;
+            margin: auto;
+            font-size: 24px;
+        }
+
+        i {
+            font-size: 50px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+    }
+
+    #team-section {
+        width: 100%;
+        height: auto;
+
+        .single-team {
+            img {
+                width: 70%;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+
+            .team-social {
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    #clients-section {
+        height: auto;
+        padding-bottom: 40px;
+        width: 100%;
+
+
+        .sec-heading {
+            h2 {
+                color: whitesmoke;
+            }
+
+            .heading-underline {
+                background: whitesmoke;
+            }
+        }
+
+        .single-client {
+            margin-right: 50%;
+
+            img {
+                width: 80% !important;
+            }
+        }
+    }
+
+    #faq-section {
+        height: auto;
+        width: 100%;
+        margin-bottom: 100px !important;
+
+        img {
+            display: none !important;
+        }
+
+        .card-header {
+            background: #34495B;
+            padding: 15px;
+
+            h5 {
+                a {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    #carrier-section {
+        height: auto;
+
+        .bg-overlay2 {
+            height: auto;
+            padding: 30px 0px;
+
+        }
+
+        .single-carrier {
+            padding: 50px;
+        }
+    }
+
+    #contact-section {
+        height: auto;
+        padding-bottom: 50px;
+        width: 100%;
+
+        form {
+            padding: 0px 20px;
+        }
+    }
+
+
+
+}
